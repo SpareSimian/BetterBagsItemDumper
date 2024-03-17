@@ -1,4 +1,4 @@
-## Interface: 100100
+## Interface: 100205
 ## Title: BetterBagsItemDumper
 ## Version: 10.2-0
 ## Notes: BetterBags filter plugin to dump info for all items for analysis and filter development
