@@ -6,9 +6,9 @@ local categories = bb:GetModule('Categories')
 
 categories:RegisterCategoryFunction("ItemDumper", function (data)
 
-  if C_TooltipInfo and C_TooltipInfo.GetItemByID then
+  if C_TooltipInfo and C_TooltipInfo.GetOwnedItemByID then
     -- append tooltip data we'll use for filtering
-    data["TooltipInfo"] = C_TooltipInfo.GetItemByID(data.itemInfo.itemID)
+    data["TooltipInfo"] = C_TooltipInfo.GetOwnedItemByID(data.itemInfo.itemID)
   end
 
   -- add everything to debugging table for later inspection
