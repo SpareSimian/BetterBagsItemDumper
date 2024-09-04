@@ -34,11 +34,6 @@ categories:RegisterCategoryFunction("ItemDumper", function (data)
 end)
 
 function addon:OnInitialize()
-  if not bbidDB then
-    bbidDB = {}
-  end
-  -- report in chat how big the table has gotten
-  local originalCount = 0
-  for _ in pairs(bbidDB) do originalCount = originalCount + 1 end
-  addon:Print(addonName .. " previously knew about " .. tostring(originalCount) .. " items")
+  -- reset table after each login
+  bbidDB = {}
 end
